@@ -4,5 +4,5 @@ En el curso de física calor y ondas, el profesor enviará durante todo el semes
 
 ## Tarea 1
 
-PDF: [Tarea 1.pdf](Tarea%201-%20Oscilaciones%20con%20python.pdf)
+PDF: [Tarea 1.pdf](Tarea%201-%20Oscilaciones%20con%20python.pdf)  
 Solución: [Tarea 1.ipynb](tarea1.ipynb)
