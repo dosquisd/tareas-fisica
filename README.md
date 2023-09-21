@@ -4,11 +4,11 @@ En el curso de física calor y ondas, el profesor enviará durante todo el semes
 
 ## Tarea 1
 
-PDF: [Tarea 1.pdf](Tarea%201-%20Oscilaciones%20con%20python.pdf)
+PDF: [Tarea 1.pdf](Tarea%201-%20Oscilaciones%20con%20python.pdf)  
 Solución: [Tarea 1.ipynb](tarea1.ipynb)
 
 ## Tarea 2
 
-PDF: [Tarea 2.pdf](Tarea%202-%20Oscilaciones%20amortiguadas%20con%20python.pdf)
-Fórmulas usadas: [formulas_tarea2.md](formulas_tarea2.md)
+PDF: [Tarea 2.pdf](Tarea%202-%20Oscilaciones%20amortiguadas%20con%20python.pdf)  
+Fórmulas usadas: [formulas_tarea2.md](formulas_tarea2.md)  
 Solución: [Tarea 2.ipynb](tarea2.ipynb)
