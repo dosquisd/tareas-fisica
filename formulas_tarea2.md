@@ -66,7 +66,7 @@ $$
 \alpha^2 - \omega_0^2 = 0 \hspace{3pt} \Rightarrow \hspace{3pt} b = 2\sqrt{km}
 $$
 
-Entonces, al ser iguales $\alpha$ y $\omega_0$, $\lambda = -\alpha \pm \sqrt{\alpha^2 - \omega_0^2} = -\alpha$, entonces la solución a la ecuación diferencial está dada por
+Al ser iguales $\alpha$ y $\omega_0$, $\lambda = -\alpha \pm \sqrt{\alpha^2 - \omega_0^2} = -\alpha$, luego, la solución a la ecuación diferencial está dada por
 
 $$
 x(t) = (C_1 + C_2 t)e^{\lambda t} \hspace{3pt} \Rightarrow \hspace{3pt} x(t) = (C_1 + C_2 t) e^{-\alpha t}
@@ -111,13 +111,13 @@ $$
 La solución a la ecuación diferencial está dada por
 
 $$
-x(t) = C_1 e^{-(b/2m)t} \cos{(\omega t + C_2)}
+x(t) = C_1 e^{-\alpha t} \cos{(\omega t + C_2)}
 $$
 
 Donde $\omega = \sqrt{\omega_0^2 - \alpha^2} = \sqrt{\frac{k}{m} - \left( \frac{b}{2m} \right)^2}$. La velocidad dada por
 
 $$
-v(t) = -\frac{C_1 b}{2m} e^{-(b/2m)t} \cos{(\omega t + C_2)} - C_1 \omega e^{-(b/2m)t} \sin{(\omega t + C_2)}
+v(t) = -C_1 \alpha e^{-\alpha t} \cos{(\omega t + C_2)} - C_1 \omega e^{-\alpha t} \sin{(\omega t + C_2)}
 $$
 
 Entonces, el sistema de ecuaciones que se obtienen a partir de las condiciones iniciales es el siguiente
@@ -127,20 +127,20 @@ x(0) = C_1 \cos{C_2} = x_0
 $$
 
 $$
-v(0) = -\frac{C_1 b}{2m} \cos{C_2} - C_1 \omega \sin{C_2} = v_0
+v(0) = -C_1 \alpha \cos{C_2} - C_1 \omega \sin{C_2} = v_0
 $$
 
-La solución entonces está dada por
+La solución del sistema de ecuaciones es siguiente
 
 $$
-C_2 = \arctan{\left[ -\left( \frac{v_0}{x_0 \omega} + \alpha \right)\right]} =\arctan{\left[ -\left( \frac{v_0}{x_0 \omega} + \frac{b}{2m} \right)\right]}
+C_2 = \arctan{\left[ -\left( \frac{v_0}{x_0 \omega} + \frac{\alpha}{\omega} \right)\right]} =\arctan{\left[ -\left( \frac{v_0}{x_0 \omega} + \frac{b}{2m\omega} \right)\right]}
 $$
 
 $$
 C_1 = \sqrt{\frac{x_0^2 + (\frac{v_0}{\omega})^2}{ \left( \frac{\alpha}{\omega} \cos{C_2} \right)^2 + \frac{\alpha}{\omega} \sin{(2 C_2)} + 1}} = \sqrt{\frac{x_0^2 + (\frac{v_0}{\omega})^2}{ \left( \frac{b}{2m\omega} \cos{C_2} \right)^2 + \frac{b}{2m\omega} \sin{(2 C_2)} + 1}}
 $$
 
-Note que para la constante $C_2$, cuando $x_0 = 0$, entonces $C_2 = n\frac{\pi}{2}$, donde $n \in \mathbb{Z} \backslash \{0\}$, y si se hubiera querido, con reemplazar $C_1$ en la segunda ecuación, no obstante, se presentaba un gran problema cuando $x_0 = 0$, por lo que se buscó la manera en la que se exprese el valor de la constante $C_1$ para así evitar el problema antes mencionado, se aprecia de que con la expresión obtenida, se soluciona precisamente ese problema. A pesar de que en la ecuación de $C_1$ aparezca $C_2$, se vió más cómodo expresarlo así, pero si se desea, también se puede reemplazar.
+Note que para la constante $C_2$, cuando $x_0 = 0$, entonces $C_2 = n\frac{\pi}{2}$, donde $n \in \mathbb{Z} \backslash \{0\}$, y si se hubiera querido, bastaba con reemplazar con reemplazar la constante $C_2$ en la primera ecuación ($C_1 \cos{C_2} = x_0$), sin embargo, esto presentaba un problema, pues precisamente cuando $x_0 = 0$, $\cos{C_2} = 0$, siendo imposible obtener el valor de $C_1$ en ese caso, por lo que se optó por encontrar otra ecuación que lo permitiera. Además, el uso de $C_2$ en la ecuación despejada de $C_1$ simplemente fue por comodidad.
 
 La aceleración está dada por
 
