@@ -12,3 +12,9 @@ Solución: [Tarea 1.ipynb](tarea1.ipynb)
 PDF: [Tarea 2.pdf](Tarea%202-%20Oscilaciones%20amortiguadas%20con%20python.pdf)  
 Fórmulas usadas: [formulas_tarea2.md](formulas_tarea2.md)  
 Solución: [Tarea 2.ipynb](tarea2.ipynb)
+
+## Tarea 3
+
+PDF: [Tarea 3.pdf](Tarea%203-%20Ondas%20viajeras%20con%20python.pdf)  
+Fórmulas usadas: [formulas_tarea3.md](formulas_tarea3.md)  
+Solución: [Tarea 3.ipynb](tarea3.ipynb)  
