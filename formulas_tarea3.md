@@ -16,6 +16,28 @@ $T$ es el periodo.
 $\phi_0$ es la fase inicial, pues no necesariamente todas las ondas iniciarán con la misma posición.
 Cuando la onda viaja hacia el eje $+x$, la fase toma el valor de $kx - \omega t + \phi_0$. Cuando viaja hacia el eje $-x$, la fase es $kx + \omega t + \phi_0$
 
+A partir de condiciones iniciales es posible calcular la fase inicial $\phi_0$. Suponiendo que una onda que se propaga a lo largo del eje $+x$, en el instante $t = 0$, $x = x_0$ y $v = v_0$, donde $v = \frac{\partial y(x, t)}{\partial t} = \omega A \sin{(kx - \omega t + \phi_0)}$, obteniendo así el siguiente sistema de ecuaciones
+
+$$
+y(x_0, t) = A \cos{(kx_0 + \phi_0)} = y_0
+$$
+
+$$
+v(x_0, t) = A\omega \sin{(kx_0 + \phi_0)} = v_0
+$$
+
+Las incognitas del sistema son $y_0$ y $\phi_0$. Resolviendo el sistema, obtenemos que
+
+$$
+y_0 = \pm\sqrt{A^2 - \frac{v_0^2}{\omega^2}}
+$$
+
+$$
+\phi_0 = \arctan{\left( \frac{v_0}{\omega y_0} \right)} - kx_0
+$$
+
+Note que para $\phi$, su ecuación es válida para $y_0 \neq 0$. Cuando sea $y = 0$, $\arctan{\left( \frac{v_0}{\omega y_0} \right)} = n\frac{\pi}{2}$, donde $n \in \mathbb{Z} \backslash\{ 0 \}$. A la hora de desarrollar el programa se tomó la parte positiva en $y_0$ y para cuando $y_0 = 0$, $\phi_0 = \frac{\pi}{2} - kx_0$
+
 ## Rapidez de propagación
 
 La rapidez en una onda periódica se encuentra dada por
@@ -30,7 +52,7 @@ $$
 v = \sqrt{\frac{F}{\mu}}
 $$
 
-Donde $F$ es la tensión que se le aplica a la fuerza y $\mu$ es la densidad lineal de masa de la cuerda.
+Donde $F$ es la tensión que se le aplica a la cuerda y $\mu$ es la densidad lineal de masa de la misma.
 
 ## Potencia
 
